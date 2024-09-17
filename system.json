@@ -14,7 +14,7 @@
   ],
   "packs": [
     {
-      "type": "system",
+      "type": "rules",
       "name": "rules",
       "label": "Regelwerk",
       "system": "htbah",
