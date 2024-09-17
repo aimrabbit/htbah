@@ -8,7 +8,7 @@
       "discord": "roboter5123"
     }
   ],
-  "url": "Replace this with a link to your public repository",
+  "url": "https://github.com/roboter5123/htbah",
   "license": "LICENSE.txt",
   "readme": "README.md",
   "bugs": "Replace this with a link to file issues or tickets",
@@ -36,13 +36,18 @@
       "lang": "en",
       "name": "English",
       "path": "lang/en.json"
+    },
+    {
+      "lang": "de",
+      "name": "German",
+      "path": "lang/de.json"
     }
   ],
   "packs": [],
   "packFolders": [],
   "socket": false,
-  "manifest": "Replace this with a link to the /latest release system.json so people can receive updates after they've installed the system",
-  "download": "This must link to a .zip file of the current version",
+  "manifest": "https://raw.githubusercontent.com/roboter5123/htbah/main/system.json",
+  "download": "https://github.com/roboter5123/htbah/archive/main.zip",
   "background": "systems/howtobeahero/assets/anvil-impact.png",
   "gridDistance": 1,
   "gridUnits": "m",
