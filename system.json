@@ -1,32 +1,51 @@
 {
-  "id": "htbah",
-  "title": "How to be a Hero",
-  "description": "How to be a Hero - das Regelwerk deiner Wahl. Wir stehen für Einsteigerfreundlichkeit, Einfachheit und Freiheit.",
-  "author": "roboter5123",
-  "version": 0.01,
-  "minimumCoreVersion": "0.11.0",
-  "compatibleCoreVersion": "0.11.0",
-  "esmodules": [
-    "modules/main.js"
-  ],
-  "styles": [
-    "styles/sheet.css"
-  ],
-  "packs": [],
-  "languages": [
+  "id": "howtobeahero",
+  "title": "HowToBeAHero",
+  "description": "The HowToBeAHero system for FoundryVTT!",
+  "authors": [
     {
-      "lang": "de",
-      "name": "Deutsch (German)",
-      "path": "lang/de.json"
+      "name": "roboter5123",
+      "discord": "roboter5123"
     }
   ],
+  "url": "Replace this with a link to your public repository",
+  "license": "LICENSE.txt",
+  "readme": "README.md",
+  "bugs": "Replace this with a link to file issues or tickets",
+  "changelog": "CHANGELOG.md",
+  "media": [
+    {
+      "type": "setup",
+      "url": "systems/howtobeahero/assets/anvil-impact.png",
+      "thumbnail": "systems/howtobeahero/assets/anvil-impact.png"
+    }
+  ],
+  "version": "2.0.0",
+  "compatibility": {
+    "minimum": 11,
+    "verified": "11.315"
+  },
+  "esmodules": [
+    "module/howtobeahero.mjs"
+  ],
+  "styles": [
+    "css/howtobeahero.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [],
+  "packFolders": [],
+  "socket": false,
+  "manifest": "Replace this with a link to the /latest release system.json so people can receive updates after they've installed the system",
+  "download": "This must link to a .zip file of the current version",
+  "background": "systems/howtobeahero/assets/anvil-impact.png",
   "gridDistance": 1,
   "gridUnits": "m",
-  "initiative": "1d10 + @action.points",
   "primaryTokenAttribute": "health",
-  "secondaryTokenAttribute": null,
-  "url": "https://github.com/roboter5123/htbah",
-  "manifest": "https://raw.githubusercontent.com/roboter5123/htbah/main/system.json",
-  "download": "https://github.com/roboter5123/htbah/archive/main.zip",
-  "license": "License.txt"
+  "secondaryTokenAttribute": "power"
 }
