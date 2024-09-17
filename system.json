@@ -14,7 +14,7 @@
   ],
   "packs": [
     {
-      "type": "rules",
+      "type": "JournalEntry",
       "name": "rules",
       "label": "Regelwerk",
       "system": "htbah",
