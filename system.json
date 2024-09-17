@@ -12,16 +12,7 @@
   "styles": [
     "styles/sheet.css"
   ],
-  "packs": [
-    {
-      "type": "JournalEntry",
-      "name": "rules",
-      "label": "Regelwerk",
-      "system": "htbah",
-      "path": "packs/rules.db",
-      "entity": "JournalEntry"
-    }
-  ],
+  "packs": [],
   "languages": [
     {
       "lang": "de",
