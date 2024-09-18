@@ -8,7 +8,7 @@
             {{!-- The grid classes are defined in scss/global/_grid.scss. To use,
             use both the "grid" and "grid-Ncol" class where "N" can be any number
             from 1 to 12 and will create that number of columns.  --}}
-            <div class="resources grid grid-3col">
+            <div class="resources grid grid-2col">
 
                 {{!-- "flex-group-center" is also defined in the _grid.scss file
                 and it will add a small amount of padding, a border, and will
@@ -40,14 +40,14 @@
         {{!-- Default tab is specified in actor-sheet.mjs --}}
         <a class="item" data-tab="skills">Skills</a>
         <a class="item" data-tab="inventory">Inventory</a>
-        <a class="item" data-tab="description">Description</a>
+        <a class="item" data-tab="biography">Biography</a>
     </nav>
 
     {{!-- Sheet Body --}}
     <section class="sheet-body">
 
         {{!-- Owned Features Tab --}}
-        <div class="tab features" data-group="primary" data-tab="features">
+        <div class="tab features" data-group="primary" data-tab="skills">
             <section class="grid grid-3col">
                 <aside class="sidebar">
 
@@ -83,7 +83,7 @@
         </div>
 
         {{!-- Biography Tab --}}
-        <div class="tab biography" data-group="primary" data-tab="description">
+        <div class="tab biography" data-group="primary" data-tab="biography">
             {{!-- Editors must receive enriched text data from getData to properly handle rolls --}}
             {{editor enrichedBiography target="system.biography" engine="prosemirror" button=true editable=editable}}
         </div>
