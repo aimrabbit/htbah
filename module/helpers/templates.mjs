@@ -6,11 +6,11 @@
 export const preloadHandlebarsTemplates = async function () {
   return loadTemplates([
     // Actor partials.
-    'systems/howtobeahero/templates/actor/parts/actor-features.hbs',
-    'systems/howtobeahero/templates/actor/parts/actor-items.hbs',
-    'systems/howtobeahero/templates/actor/parts/actor-spells.hbs',
-    'systems/howtobeahero/templates/actor/parts/actor-effects.hbs',
+    'systems/how-to-be-a-hero/templates/actor/parts/actor-features.hbs',
+    'systems/how-to-be-a-hero/templates/actor/parts/actor-items.hbs',
+    'systems/how-to-be-a-hero/templates/actor/parts/actor-spells.hbs',
+    'systems/how-to-be-a-hero/templates/actor/parts/actor-effects.hbs',
     // Item partials
-    'systems/howtobeahero/templates/item/parts/item-effects.hbs',
+    'systems/how-to-be-a-hero/templates/item/parts/item-effects.hbs',
   ]);
 };

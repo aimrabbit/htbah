@@ -1,22 +1,23 @@
 {
-  "id": "howtobeahero",
-  "title": "HowToBeAHero",
-  "description": "The HowToBeAHero system for FoundryVTT!",
+  "id": "how-to-be-a-hero",
+  "title": "How to be a Hero",
+  "description": "The How to be a Hero system for FoundryVTT!",
   "authors": [
     {
-      "name": "roboter5123"
+      "name": "roboter5123",
+      "discord": "roboter5123"
     }
   ],
   "url": "https://github.com/roboter5123/htbah",
   "license": "LICENSE.txt",
   "readme": "README.md",
-  "bugs": "Replace this with a link to file issues or tickets",
+  "bugs": "https://github.com/roboter5123/htbah/issues/new",
   "changelog": "CHANGELOG.md",
   "media": [
     {
       "type": "setup",
-      "url": "systems/howtobeahero/assets/anvil-impact.png",
-      "thumbnail": "systems/howtobeahero/assets/anvil-impact.png"
+      "url": "systems/how-to-be-a-hero/assets/anvil-impact.png",
+      "thumbnail": "systems/how-to-be-a-hero/assets/anvil-impact.png"
     }
   ],
   "version": "2.0.0",
@@ -24,18 +25,9 @@
     "minimum": 11,
     "verified": "11.315"
   },
-  "esmodules": [
-    "module/howtobeahero.mjs"
-  ],
-  "styles": [
-    "css/howtobeahero.css"
-  ],
+  "esmodules": ["module/how-to-be-a-hero.mjs"],
+  "styles": ["css/how-to-be-a-hero.css"],
   "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json"
-    },
     {
       "lang": "de",
       "name": "German",
@@ -47,9 +39,7 @@
   "socket": false,
   "manifest": "https://raw.githubusercontent.com/roboter5123/htbah/main/system.json",
   "download": "https://github.com/roboter5123/htbah/archive/main.zip",
-  "background": "systems/howtobeahero/assets/anvil-impact.png",
+  "background": "systems/how-to-be-a-hero/assets/anvil-impact.png",
   "gridDistance": 1,
-  "gridUnits": "m",
-  "primaryTokenAttribute": "health",
-  "secondaryTokenAttribute": "power"
+  "gridUnits": "m"
 }

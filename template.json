@@ -1,86 +1,73 @@
 {
   "Actor": {
-    "types": ["pc", "npc", "creature"],
-    "templates":{
-      "general":{
+    "types": [
+      "character",
+      "npc"
+    ],
+    "templates": {
+      "base": {
         "health": {
           "value": 100,
           "min": 0,
           "max": 100
         },
-        "description": ""
-      },
-      "skills": {
-        "action": {
-          "points": 0,
-          "brainstorm": 0
-        },
-        "knowledge": {
-          "points": 0,
-          "brainstorm": 0
-        },
-        "social": {
-          "points": 0,
-          "brainstorm": 0
-        }
-      },
-      "player": {
-        "gender": "",
-        "age": 0,
-        "physique": "",
-        "religion": "",
-        "job": "",
-        "maritalStatus": "",
-        "portrait": "systems/htbah/assets/portrait-empty.svg"
-      },
-      "creature": {
-        "attackD10": 0,
-        "attackModifier": 0,
-        "action": {
-          "points": 0
+        "skillSets": {
+          "actions": {
+            "eureka": {
+              "value": 0,
+              "min" : 0
+            },
+            "skills": []
+          },
+          "knowledge": {
+            "eureka": {
+              "value": 0,
+              "min" : 0
+            },
+            "skills": []
+          },
+          "social": {
+            "eureka": {
+              "value": 0,
+              "min" : 0
+            },
+            "skills": []
+          }
         }
       }
     },
-
-    "pc": {
-      "templates": ["general", "skills", "player"]
+    "character": {
+      "templates": [
+        "base"
+      ],
+      "biography": "",
+      "mentalHealth": {
+        "value": 100,
+        "min": 0,
+        "max": 100
+      }
     },
     "npc": {
-      "templates": ["general", "skills"]
-    },
-    "creature": {
-      "templates": ["general", "creature"]
+      "templates": [
+        "base"
+      ]
     }
   },
-
   "Item": {
-    "types": ["simple", "equipment", "skill"],
-    "templates":{
-      "general": {
+    "types": [
+      "item"
+    ],
+    "templates": {
+      "base": {
         "description": ""
-      },
-      "stack" : {
-        "stackable": false,
-        "quantity": 1
-      },
-      "equipment": {
-        "damageD10": 0,
-        "damageModifier": 0,
-        "defenseModifier": 0
-      },
-      "skill": {
-        "category": 0,
-        "points": 0
       }
     },
-    "simple": {
-      "templates": ["general", "stack"]
-    },
-    "equipment": {
-      "templates": ["general", "stack", "equipment"]
-    },
-    "skill" : {
-      "templates": ["general", "skill"]
+    "item": {
+      "templates": [
+        "base"
+      ],
+      "quantity": 1,
+      "weight": 0
     }
   }
 }

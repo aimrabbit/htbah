@@ -6,7 +6,7 @@ import { HowToBeAHeroActorSheet } from './sheets/actor-sheet.mjs';
 import { HowToBeAHeroItemSheet } from './sheets/item-sheet.mjs';
 // Import helper/utility classes and constants.
 import { preloadHandlebarsTemplates } from './helpers/templates.mjs';
-import { BOILERPLATE } from './helpers/config.mjs';
+import { HOW_TO_BE_A_HERO } from './helpers/config.mjs';
 
 /* -------------------------------------------- */
 /*  Init Hook                                   */
@@ -22,14 +22,14 @@ Hooks.once('init', function () {
   };
 
   // Add custom constants for configuration.
-  CONFIG.BOILERPLATE = BOILERPLATE;
+  CONFIG.HOW_TO_BE_A_HERO = HOW_TO_BE_A_HERO;
 
   /**
    * Set an initiative formula for the system
    * @type {String}
    */
   CONFIG.Combat.initiative = {
-    formula: '1d20 + @abilities.dex.mod',
+    formula: '1d100 + @skillSets.actions.value',
     decimals: 2,
   };
 
@@ -44,14 +44,14 @@ Hooks.once('init', function () {
 
   // Register sheet application classes
   Actors.unregisterSheet('core', ActorSheet);
-  Actors.registerSheet('howtobeahero', HowToBeAHeroActorSheet, {
+  Actors.registerSheet('how-to-be-a-hero', HowToBeAHeroActorSheet, {
     makeDefault: true,
-    label: 'BOILERPLATE.SheetLabels.Actor',
+    label: 'HOW_TO_BE_A_HERO.SheetLabels.Actor',
   });
   Items.unregisterSheet('core', ItemSheet);
-  Items.registerSheet('howtobeahero', HowToBeAHeroItemSheet, {
+  Items.registerSheet('how-to-be-a-hero', HowToBeAHeroItemSheet, {
     makeDefault: true,
-    label: 'BOILERPLATE.SheetLabels.Item',
+    label: 'HOW_TO_BE_A_HERO.SheetLabels.Item',
   });
 
   // Preload Handlebars templates.
@@ -109,7 +109,7 @@ async function createItemMacro(data, slot) {
       type: 'script',
       img: item.img,
       command: command,
-      flags: { 'howtobeahero.itemMacro': true },
+      flags: { 'how-to-be-a-hero.itemMacro': true },
     });
   }
   game.user.assignHotbarMacro(macro, slot);

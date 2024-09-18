@@ -1,87 +1,41 @@
 {
-  "htbah": {
-    "general" : {
-      "diceAbbrev": "W",
-      "diceModifier": "Wurf Modifikator",
-
-      "ok": "Ok",
-      "cancel": "Abbrechen",
-      "delete": "Löschen",
-      "edit": "Bearbeiten",
-
-      "checkMessage": "<b>{name}</b> wirft eine Probe auf <i>{skill}</i>:",
-      "success": "<b>Erfolg!</b>",
-      "failure": "<b>Fehlschlag!</b>",
-      "fatalSuccess": "<b>Kritischer Erfolg!</b>",
-      "fatalFailure": "<b>Kritischer Fehlschlag!</b>"
+  "HOW_TO_BE_A_HERO": {
+    "Ability": {
+      "Str": { "long": "Strength", "abbr": "str" },
+      "Con": { "long": "Constitution", "abbr": "con" },
+      "Dex": { "long": "Dexterity", "abbr": "dex" },
+      "Int": { "long": "Intelligence", "abbr": "int" },
+      "Wis": { "long": "Wisdom", "abbr": "wis" },
+      "Cha": { "long": "Charisma", "abbr": "cha" }
     },
-
-    "sheet": {
-      "general": {
-        "name": "Name",
-        "description": "Beschreibung",
-        "count": "Anzahl",
-        "health": "Lebenspunkte",
-        "points": "Punkte",
-        "action": "Handeln",
-        "knowledge": "Wissen",
-        "social": "Soziales"
-      },
-      
-      "actor": {
-        "gender": "Geschlecht",
-        "age": "Alter",
-        "physique": "Statur",
-        "religion": "Religion",
-        "job": "Beruf",
-        "maritalStatus": "Familienstand",
-        "selectTokenImage": "Tokengrafik auswählen",
-        
-        "skills": "Fähigkeiten",
-        "inventory": "Inventar",
-        "bio": "Biographie",
-
-        "noItems": "Keine Gegenstände vorhanden",
-
-        "attackWith": "Angriff mit",
-        "defendWith": "Parade mit",
-
-        "checkAgainst": "Probe auf",
-        "newSkill": "Neue Fähigkeit",
-        "spentSkillPoints": "Ausgegebene Fähigkeitspunkte",
-
-        "initiative": "Initiative",
-        "attack": "Angriff",
-        "defend": "Parade"
-      },
-
-      "item": {
-        "damage": "Schaden",
-        "defense": "Parade (Bonus/Malus)",
-        "category": "Kategorie",
-        "toggleStack": "Stapelfähig ein-/ausschalten"
+    "SheetLabels": {
+      "Actor": "HowToBeAHero Actor Sheet",
+      "Item": "HowToBeAHero Item Sheet"
+    },
+    "Item": {
+      "Spell": {
+        "SpellLVL": "Level {level} Spells",
+        "AddLVL": "Add LVL {level}"
       }
     },
-
-    "settings": {
-      "heroStyle": {
-        "name": "Hero Style",
-        "hint": "Hero Style für Charakterbögen nutzen"
-      },
-      "totalSkillPoints": {
-        "name": "Ausgegebene Fähigkeitspunkte anzeigen",
-        "hint": "Zeigt die Anzahl der ausgegebenen Fähigkeitspunkte im Charakterbogen an"
-      }
+    "Effect": {
+      "Source": "Source",
+      "Toggle": "Toggle Effect",
+      "Temporary": "Temporary Effects",
+      "Passive": "Passive Effects",
+      "Inactive": "Inactive Effects"
     }
   },
 
-  "ACTOR.TypePc": "Spieler-Charakter",
-  "ACTOR.TypeNpc": "Nicht-Spieler-Charakter",
-  "ACTOR.TypeCreature": "Kreatur",
-
-  "ITEM.TypeSimple": "Allgemein",
-  "ITEM.TypeEquipment": "Ausrüstung",
-  "ITEM.TypeSkill": "Fähigkeit",
-
-  "SETTINGS.None": "Keine Einstellungen vorhanden"
+  "TYPES": {
+    "Actor": {
+      "character": "Character",
+      "npc": "NPC"
+    },
+    "Item": {
+      "item": "Item",
+      "feature": "Feature",
+      "spell": "Spell"
+    }
+  }
 }

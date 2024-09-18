@@ -11,7 +11,7 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
   /** @override */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ['howtobeahero', 'sheet', 'actor'],
+      classes: ['how-to-be-a-hero', 'sheet', 'actor'],
       width: 600,
       height: 600,
       tabs: [
@@ -26,7 +26,7 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
 
   /** @override */
   get template() {
-    return `systems/howtobeahero/templates/actor/actor-${this.actor.type}-sheet.hbs`;
+    return `systems/how-to-be-a-hero/templates/actor/actor-${this.actor.type}-sheet.hbs`;
   }
 
   /* -------------------------------------------- */
@@ -46,8 +46,8 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
     context.system = actorData.system;
     context.flags = actorData.flags;
 
-    // Adding a pointer to CONFIG.BOILERPLATE
-    context.config = CONFIG.BOILERPLATE;
+    // Adding a pointer to CONFIG.HOW_TO_BE_A_HERO
+    context.config = CONFIG.HOW_TO_BE_A_HERO;
 
     // Prepare character data and items.
     if (actorData.type == 'character') {

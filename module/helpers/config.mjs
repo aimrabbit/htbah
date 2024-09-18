@@ -1,23 +1,23 @@
-export const BOILERPLATE = {};
+export const HOW_TO_BE_A_HERO = {};
 
 /**
  * The set of Ability Scores used within the system.
  * @type {Object}
  */
-BOILERPLATE.abilities = {
-  str: 'BOILERPLATE.Ability.Str.long',
-  dex: 'BOILERPLATE.Ability.Dex.long',
-  con: 'BOILERPLATE.Ability.Con.long',
-  int: 'BOILERPLATE.Ability.Int.long',
-  wis: 'BOILERPLATE.Ability.Wis.long',
-  cha: 'BOILERPLATE.Ability.Cha.long',
+HOW_TO_BE_A_HERO.abilities = {
+  str: 'HOW_TO_BE_A_HERO.Ability.Str.long',
+  dex: 'HOW_TO_BE_A_HERO.Ability.Dex.long',
+  con: 'HOW_TO_BE_A_HERO.Ability.Con.long',
+  int: 'HOW_TO_BE_A_HERO.Ability.Int.long',
+  wis: 'HOW_TO_BE_A_HERO.Ability.Wis.long',
+  cha: 'HOW_TO_BE_A_HERO.Ability.Cha.long',
 };
 
-BOILERPLATE.abilityAbbreviations = {
-  str: 'BOILERPLATE.Ability.Str.abbr',
-  dex: 'BOILERPLATE.Ability.Dex.abbr',
-  con: 'BOILERPLATE.Ability.Con.abbr',
-  int: 'BOILERPLATE.Ability.Int.abbr',
-  wis: 'BOILERPLATE.Ability.Wis.abbr',
-  cha: 'BOILERPLATE.Ability.Cha.abbr',
+HOW_TO_BE_A_HERO.abilityAbbreviations = {
+  str: 'HOW_TO_BE_A_HERO.Ability.Str.abbr',
+  dex: 'HOW_TO_BE_A_HERO.Ability.Dex.abbr',
+  con: 'HOW_TO_BE_A_HERO.Ability.Con.abbr',
+  int: 'HOW_TO_BE_A_HERO.Ability.Int.abbr',
+  wis: 'HOW_TO_BE_A_HERO.Ability.Wis.abbr',
+  cha: 'HOW_TO_BE_A_HERO.Ability.Cha.abbr',
 };
