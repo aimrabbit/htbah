@@ -45,7 +45,6 @@ export class HowToBeAHeroActor extends Actor {
     _prepareActorData(actorData) {
         // Make modifications to data here. For example:
         const systemData = actorData.system;
-
         // Loop through skillsets to set the skillset value, eureka points and calculate the final skill value
         for (let [key, skillSet] of Object.entries(systemData.skillSets)) {
             let totalSkillValue = 0;
@@ -68,12 +67,6 @@ export class HowToBeAHeroActor extends Actor {
 
         // Make modifications to data here. For example:
         const systemData = actorData.system;
-
-        // Loop through ability scores, and add their modifiers to our sheet output.
-        for (let [key, ability] of Object.entries(systemData.abilities)) {
-            // Calculate the modifier using d20 rules.
-            ability.mod = Math.floor((ability.value - 10) / 2);
-        }
     }
 
     /**
