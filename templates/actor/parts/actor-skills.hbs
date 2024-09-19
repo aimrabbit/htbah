@@ -6,13 +6,7 @@
                 <span>{{skillset.value}}</span>
                 <span>{{skillset.eureka.value}}</span>
             </div>
-            {{#each skillset.skills as skill}}
-                <div>
-                    <span>{{skill.name}}</span>
-                    <span>{{skill.baseValue}}</span>
-                    <span>{{skill.value}}</span>
-                </div>
-            {{/each}}
+            {{toString skillset}}
         </div>
     {{/each}}
 </section>
