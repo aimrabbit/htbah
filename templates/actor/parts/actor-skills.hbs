@@ -7,15 +7,6 @@
                 <span>||</span>
                 <span>{{system.skillsets.actions.eureka}}</span>
             </div>
-            <ol>
-                {{#each skillset.skills as skill}}
-                    <li>
-                        <input name="name" type="text" value="{{skill.name}}" placeholder="Name"/>
-                        <input name="baseValue" type="number" value="{{skill.baseValue}}" placeholder="0"/>
-                        <input name="baseValue" type="number" value="{{skill.value}}" placeholder="0"/>
-                    </li>
-                {{/each}}
-            </ol>
         </div>
     {{/each}}
 </section>
