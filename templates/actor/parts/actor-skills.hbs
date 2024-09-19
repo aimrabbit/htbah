@@ -7,15 +7,13 @@
                 <span>{{skillset.eureka.value}}</span>
             </div>
             <ul>
-                {{#if items.length}}
-                    {{#each skillset.skills as skill}}
-                        <li class='item flexrow' data-item-id='{{skill._id}}'>
-                            <span class='item-name'>{{skill.name}} | </span>
-                            <span>{{skill.baseValue}} | </span>
-                            <span>{{skill.value}}</span>
-                        </li>
-                    {{/each}}
-                {{/if}}
+                {{#each skills as |item id|}}-->
+                    <li class='item flexrow' data-item-id='{{item._id}}'>
+                        <span class='item-name'>{{item.name}} | </span>
+                        <span>{{item.baseValue}} | </span>
+                        <span>{{item.value}}</span>
+                    </li>
+                {{/each}}
             </ul>
             <div>
                 <a class='item-control item-create' title='Create item' data-type='skill'>
