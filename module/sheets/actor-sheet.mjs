@@ -126,7 +126,7 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
         gear.push(i);
       }
       // Append to features.
-      else if (i.type === 'feature') {
+      else if (i.type === 'skill') {
         features.push(i);
       }
       // Append to spells.

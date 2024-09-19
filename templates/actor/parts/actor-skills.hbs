@@ -1,7 +1,7 @@
 <section class="grid grid-3col">
     {{#each system.skillSets as |skillset key|}}
         <div>
-            <h3>{{key}}</h3>
+            <h3>{{capitalize key}}</h3>
             <div>
                 <span>{{skillset.value}}</span>
                 <span>{{skillset.eureka.value}}</span>

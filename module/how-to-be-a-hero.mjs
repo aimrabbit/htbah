@@ -70,6 +70,11 @@ Handlebars.registerHelper('toLowerCase', function (str) {
 Handlebars.registerHelper('stringify', function (obj) {
   return JSON.stringify(obj);
 });
+
+Handlebars.registerHelper('capitalize', function (str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+});
+
 /* -------------------------------------------- */
 /*  Ready Hook                                  */
 /* -------------------------------------------- */
