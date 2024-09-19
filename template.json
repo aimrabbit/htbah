@@ -11,27 +11,24 @@
           "min": 0,
           "max": 100
         },
-        "skillSets": {
+        "skillSets":{
           "actions": {
             "eureka": {
-              "value": 0,
-              "min" : 0
-            },
-            "skills": []
+              "value" : 0,
+              "min": 0
+            }
           },
           "knowledge": {
             "eureka": {
-              "value": 0,
-              "min" : 0
-            },
-            "skills": []
+              "value" : 0,
+              "min": 0
+            }
           },
           "social": {
             "eureka": {
-              "value": 0,
-              "min" : 0
-            },
-            "skills": []
+              "value" : 0,
+              "min": 0
+            }
           }
         }
       }
@@ -40,8 +37,7 @@
       "templates": [
         "base"
       ],
-      "biography": "",
-      "mentalHealth": {
+      "sanity": {
         "value": 100,
         "min": 0,
         "max": 100
@@ -54,7 +50,10 @@
     }
   },
   "Item": {
-    "types" : ["item", "skill"],
+    "types": [
+      "item",
+      "skill"
+    ],
     "templates": {
       "base": {
         "description": ""
@@ -71,7 +70,9 @@
       "templates": [
         "base"
       ],
-      "baseValue": 0
+      "skillSet": "",
+      "baseValue": 0,
+      "formula": "d100"
     }
   }
 }

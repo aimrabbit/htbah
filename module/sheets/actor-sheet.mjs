@@ -94,6 +94,8 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
   _prepareCharacterData(context) {
     // This is where you can enrich character-specific editor fields
     // or setup anything else that's specific to this type
+    
+    context.skills
   }
 
   /**
@@ -103,44 +105,25 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
    */
   _prepareItems(context) {
     // Initialize containers.
-    const gear = [];
-    const features = [];
-    const spells = {
-      0: [],
-      1: [],
-      2: [],
-      3: [],
-      4: [],
-      5: [],
-      6: [],
-      7: [],
-      8: [],
-      9: [],
-    };
+    const items = [];
+    const skills = {"actions" : [], "knowledge": [], "social": []};
 
     // Iterate through items, allocating to containers
     for (let i of context.items) {
       i.img = i.img || Item.DEFAULT_ICON;
-      // Append to gear.
+      // Append to items.
       if (i.type === 'item') {
-        gear.push(i);
+        items.push(i);
       }
-      // Append to features.
+      // Append to correct skillSet.
       else if (i.type === 'skill') {
-        features.push(i);
-      }
-      // Append to spells.
-      else if (i.type === 'spell') {
-        if (i.system.spellLevel != undefined) {
-          spells[i.system.spellLevel].push(i);
-        }
+        skills[i.skillSet].push(i);
       }
     }
 
     // Assign and return
-    context.gear = gear;
-    context.features = features;
-    context.spells = spells;
+    context.items = items;
+    context.skills = skills;
   }
 
   /* -------------------------------------------- */
