@@ -68,6 +68,12 @@
       ],
       "quantity": 1,
       "weight": 0
+    },
+    "skill": {
+      "templates": [
+        "base"
+      ],
+      "baseValue": 0
     }
   }
 }
