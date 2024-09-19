@@ -1,11 +1,10 @@
 <section class="grid grid-3col">
-    {{#each system.skillsets as |skillset key|}}
+    {{#each system.skillSets as |skillset key|}}
         <div>
             <h3>{{key}}</h3>
             <div>
                 <span>{{skillset.value}}</span>
-                <span>||</span>
-                <span>{{system.skillsets.actions.eureka}}</span>
+                <span>{{skillset.eureka}}</span>
             </div>
         </div>
     {{/each}}
