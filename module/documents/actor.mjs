@@ -44,19 +44,7 @@ export class HowToBeAHeroActor extends Actor {
      */
     _prepareActorData(actorData) {
         // Make modifications to data here. For example:
-        const systemData = actorData.system;
-        // Loop through skillsets to set the skillset value, eureka points and calculate the final skill value
-        for (let [key, skillSet] of Object.entries(systemData)) {
-            let totalSkillValue = 0;
-            for (let skill of skillSet.skills) {
-                totalSkillValue += skill.baseValue;
-            }
-            skillSet.value = totalSkillValue / 10;
-            skillSet.eureka.max = totalSkillValue / 100;
-            for (let skill of skillSet.skills) {
-                skill.value = skill.baseValue + skillSet.value
-            }
-        }
+
     }
 
     /**
