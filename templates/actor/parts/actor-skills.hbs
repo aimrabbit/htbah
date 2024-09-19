@@ -4,8 +4,15 @@
             <h3>{{key}}</h3>
             <div>
                 <span>{{skillset.value}}</span>
-                <span>{{skillset.eureka.value}} / {{skillset.eureka.max}}</span>
+                <span>{{skillset.eureka.value}}</span>
             </div>
+            {{#each skillset.skills as skill}}
+                <div>
+                    <span>{{skill.name}}</span>
+                    <span>{{skill.baseValue}}</span>
+                    <span>{{skill.value}}</span>
+                </div>
+            {{/each}}
         </div>
     {{/each}}
 </section>
