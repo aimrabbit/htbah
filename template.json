@@ -54,9 +54,7 @@
     }
   },
   "Item": {
-    "types": [
-      "item"
-    ],
+    "types" : ["item", "skill"],
     "templates": {
       "base": {
         "description": ""
@@ -70,6 +68,7 @@
       "weight": 0
     },
     "skill": {
+
       "templates": [
         "base"
       ],
