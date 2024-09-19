@@ -7,7 +7,7 @@
                 <span>{{skillset.eureka.value}}</span>
             </div>
             <ul>
-                {{#each lookup skills key as |skill id|}}-->
+                {{#each (lookup skills key) as |skill id|}}-->
                     <li class='item flexrow' data-item-id='{{skill._id}}'>
                         <span class='item-name'>{{skill.name}} | </span>
                         <span>{{skill.baseValue}} | </span>
