@@ -1,5 +1,4 @@
 <section class="grid grid-3col">
-    {{stringify system}}
     {{#each system.skillSets as |skillset key|}}
         <div>
             <h3>{{key}}</h3>
@@ -10,21 +9,22 @@
             <ul>
                 {{#if items.length}}
                     {{#each skillset.skills as skill}}
-                        <li>
-                            <span>{{skill.name}} | </span>
+                        <li class='item flexrow' data-item-id='{{skill._id}}'>
+                            <span class='item-name'>{{skill.name}} | </span>
                             <span>{{skill.baseValue}} | </span>
                             <span>{{skill.value}}</span>
                         </li>
                     {{/each}}
                 {{/if}}
-                <li>
-                    <a class='item-control item-create' title='Create item' data-type='feature'>
-                        <i class='fas fa-plus'></i>
-                        Add Skill
-                    </a>
-                </li>
             </ul>
+            <div>
+                <a class='item-control item-create' title='Create item' data-type='skill'>
+                    <i class='fas fa-plus'></i>
+                    Add Skill
+                </a>
+            </div>
 
         </div>
     {{/each}}
 </section>
+{{stringify system}}
