@@ -4,7 +4,8 @@
   "description": "CSS compiler for the HowToBeAHero system",
   "scripts": {
     "build": "sass src/scss/how-to-be-a-hero.scss css/how-to-be-a-hero.css --style=expanded --no-source-map",
-    "watch": "sass src/scss/how-to-be-a-hero.scss css/how-to-be-a-hero.css --style=expanded --source-map --watch"
+    "watch": "sass src/scss/how-to-be-a-hero.scss css/how-to-be-a-hero.css --style=expanded --source-map --watch",
+    "install": "npm install"
   },
   "browserslist": [
     "last 3 versions"
