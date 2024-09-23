@@ -7,11 +7,9 @@
                 <span>{{skillset.eureka.max}}</span>
             </div>
             <h4>{{stringify skillset}}</h4>
-            {{#if skillset.skills.length}}
                 <ul>
-                    <h3>{{stringify skillset.skills}}</h3>
+                    <h3>{{stringify skillset.skills.[1]}}</h3>
                 </ul>
-            {{/if}}
             <div>
                 <a class='item-control item-create' title='Create item' data-type='skill' data-skillset="{{key}}">
                     <i class='fas fa-plus'></i>
