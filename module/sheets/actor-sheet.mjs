@@ -79,6 +79,7 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
         // This is where you can enrich character-specific editor fields
         // or setup anything else that's specific to this type
         const skills = context.skills
+        console.log(context);
         for (let [key, skillSet] of Object.entries(skills)) {
             skillSet.value = 0;
             for (const skill of skillSet.skills) {
