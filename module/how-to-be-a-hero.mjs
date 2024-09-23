@@ -75,6 +75,10 @@ Handlebars.registerHelper('capitalize', function (str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 });
 
+Handlebars.registerHelper('log', function (obj) {
+  return console.log(JSON.stringify(obj));
+});
+
 /* -------------------------------------------- */
 /*  Ready Hook                                  */
 /* -------------------------------------------- */
