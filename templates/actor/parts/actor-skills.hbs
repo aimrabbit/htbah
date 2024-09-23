@@ -6,9 +6,10 @@
                 <span>{{skillset.value}}</span>
                 <span>{{skillset.eureka.max}}</span>
             </div>
-            {{log skillset}}
-            {{log skillset.skills}}
-            {{log skillset.skills.length}}
+            {{#each this.skills as skill}}
+            <h4>{{skill}}</h4>
+            {{/each}}
+
             <div>
                 <a class='item-control item-create' title='Create item' data-type='skill' data-skillset="{{key}}">
                     <i class='fas fa-plus'></i>
