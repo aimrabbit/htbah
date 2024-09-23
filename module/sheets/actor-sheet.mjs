@@ -122,7 +122,7 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
             else if (i.type === 'skill') {
                 console.log("_prepareItems item skill")
                 console.log(i)
-                skillSets[i.skillSet].skills.push(i);
+                skillSets[i.system.skillSet].skills.push(i);
             }
         }
 
