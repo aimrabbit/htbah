@@ -3,8 +3,18 @@
         <div>
             <h3>{{capitalize key}}</h3>
             <div>
-                <span>{{skillset.value}}</span>
+                <span>
+                    <h4>SkilL Set Value</h4>
+                    <a class='rollable' data-roll-type='skill'>
+                        {{skillset.value}}
+                    </a>
+                </span>
+                <span>
+                    <h4>Eureka Points current/max</h4>
                 <span>{{skillset.eureka.max}}</span>
+                </span>
+
+
             </div>
             {{#if skillset.skills}}
                 <ol class='items-list'>
