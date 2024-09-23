@@ -4,13 +4,13 @@
             <h3>{{capitalize key}}</h3>
             <div class="grid grid-2col">
                 <span>
-                    <div>Skill Set Value</div>
+                    <div>Value</div>
                     <a class='rollable' data-roll-type='skill'>
                         {{skillset.value}}
                     </a>
                 </span>
                 <span>
-                    <div>Eureka Points current/max</div>
+                    <div>Eureka cur/max</div>
                 <span>{{skillset.eureka.max}}</span>
                 </span>
 
@@ -19,7 +19,7 @@
             {{#if skillset.skills}}
                 <ol class='items-list'>
                     {{#each skillset.skills as |skill|}}
-                        <li class='item flexrow' data-item-id='{{skill._id}}'>
+                        <li class='item class="grid grid-4col"' data-item-id='{{skill._id}}'>
                             <div class='item-name'>
                                 <h4>{{skill.name}}</h4>
                             </div>
