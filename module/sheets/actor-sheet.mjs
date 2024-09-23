@@ -194,6 +194,7 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
         const type = header.dataset.type;
         // Grab any data associated with this control.
         const data = duplicate(header.dataset);
+        data.skillSet = data.skillset;
         // Initialize a default name.
         const name = `New ${type.capitalize()}`;
         // Prepare the item object.
