@@ -6,12 +6,10 @@
                 <span>{{skillset.value}}</span>
                 <span>{{skillset.eureka.max}}</span>
             </div>
-            <h3>{{stringify this}}</h3>
-            <h2>{{stringify this.skills}}</h2>
             Start here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             {{#if skillset.skills}}
                 {{#each skillset.skills as |skill|}}
-                    <h4>{{stringify skill}}</h4>
+                    <h4>{{stringify skill.name}}</h4>
                 {{/each}}
             {{/if}}
             <div>
