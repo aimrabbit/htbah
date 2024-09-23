@@ -116,6 +116,10 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
             }
             // Append to correct skillSet.
             else if (i.type === 'skill') {
+                console.log("skill")
+                console.log(i)
+                console.log("skillSets")
+                console.log(skillSets)
                 skillSets[i.system.skillSet].skills.push(i);
             }
         }
