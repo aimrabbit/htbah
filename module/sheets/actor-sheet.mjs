@@ -121,7 +121,7 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
 
         // Assign and return
         context.items = items;
-        context.skills = skillSets;
+        context.skillSets = skillSets;
     }
 
     /* -------------------------------------------- */
