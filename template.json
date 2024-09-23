@@ -16,19 +16,22 @@
             "eureka": {
               "value" : 0,
               "min": 0
-            }
+            },
+            "skills": []
           },
           "knowledge": {
             "eureka": {
               "value" : 0,
               "min": 0
-            }
+            },
+            "skills": []
           },
           "social": {
             "eureka": {
               "value" : 0,
               "min": 0
-            }
+            },
+            "skills": []
           }
         }
       }

@@ -78,7 +78,7 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
     _prepareCharacterData(context) {
         // This is where you can enrich character-specific editor fields
         // or setup anything else that's specific to this type
-        const skills = context.system.skills
+        const skills = context.skills
         for (let [key, skillSet] of Object.entries(skills)) {
             skillSet.value = 0;
             for (const skill of skillSet.skills) {
@@ -113,13 +113,14 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
             if (i.type === 'item') {
                 items.push(i);
             }
-            // Append to correct skillSet.
-            else if (i.type === 'skill' && i.skillSet !== "" && i.skillSet != null) {
-                skillSets[i.skillSet]["skills"].push(i);
-            }
+            // // Append to correct skillSet.
+            // else if (i.type === 'skill') {
+            //     skillSets[i.skillSet].skills.push(i);
+            // }
         }
 
         // Assign and return
+        context.allItems = context.items
         context.items = items;
         context.skillSets = skillSets;
     }
