@@ -6,14 +6,13 @@
                 <span>{{skillset.value}}</span>
                 <span>{{skillset.eureka.max}}</span>
             </div>
-                {{skillset}}
+                {{stringify skillset}}
             <div>
                 <a class='item-control item-create' title='Create item' data-type='skill'>
                     <i class='fas fa-plus'></i>
                     {{localize 'DOCUMENT.New' type='skill'}}
                 </a>
             </div>
-
         </div>
     {{/each}}
 </section>
