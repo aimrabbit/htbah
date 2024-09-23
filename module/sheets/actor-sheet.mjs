@@ -88,7 +88,7 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
             skillSet.value = skillSet.value / 10;
             skillSet.eureka.max = skillSet.value / 10
             for (const skill of skillSet.skills) {
-                skill.system.value += skillSet.value;
+                skill.system.value = skill.system.baseValue + skillSet.value;
             }
         }
     }
@@ -106,10 +106,6 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
             "knowledge": {"value": 0, "eureka": {"max": 0}, "skills": []},
             "social": {"value": 0, "eureka": {"max": 0}, "skills": []}
         };
-        console.log("_prepareItems context")
-        console.log(context)
-        console.log("_prepareItems skillSets")
-        console.log(skillSets)
 
         // Iterate through items, allocating to containers
         for (let i of context.items) {
@@ -120,8 +116,6 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
             }
             // Append to correct skillSet.
             else if (i.type === 'skill') {
-                console.log("_prepareItems item skill")
-                console.log(i)
                 skillSets[i.system.skillSet].skills.push(i);
             }
         }
