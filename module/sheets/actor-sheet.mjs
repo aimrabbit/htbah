@@ -182,6 +182,7 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
      */
     async _onItemCreate(event) {
         event.preventDefault();
+        console.log(event)
         const header = event.currentTarget;
         // Get the type of item to create.
         const type = header.dataset.type;
