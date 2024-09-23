@@ -83,12 +83,12 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
         for (let [key, skillSet] of Object.entries(skills)) {
             skillSet.value = 0;
             for (const skill of skillSet.skills) {
-                skillSet.value += skill.system.basevalue
+                skillSet.value += Number(skill.system.basevalue);
             }
             skillSet.value = skillSet.value / 10;
-            skillSet.eureka.max = skillSet.value / 10
+            skillSet.eureka.max = skillSet.value / 10;
             for (const skill of skillSet.skills) {
-                skill.system.value = skill.system.basevalue + skillSet.value;
+                skill.system.value = Number(skill.system.basevalue) + skillSet.value;
             }
         }
     }
