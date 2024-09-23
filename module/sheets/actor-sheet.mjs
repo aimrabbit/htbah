@@ -192,7 +192,7 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
         const name = `New ${type.capitalize()}`;
         // Prepare the item object.
         const itemData = {
-            name: name, type: type, system: data,
+            name: name, type: type, system: data
         };
         // Remove the type from the dataset since it's in the itemData.type prop.
         delete itemData.system['type'];
