@@ -108,6 +108,8 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
         };
         console.log("_prepareItems context")
         console.log(context)
+        console.log("_prepareItems skillSets")
+        console.log(skillSets)
 
         // Iterate through items, allocating to containers
         for (let i of context.items) {
