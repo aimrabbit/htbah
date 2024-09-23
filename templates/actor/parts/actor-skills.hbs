@@ -7,9 +7,7 @@
                 <span>{{skillset.eureka.max}}</span>
             </div>
             <ul>
-                {{#each skillset.skills as skill}}
-                    {{stringify skill}}
-                {{/each}}
+                <h3>{{stringify skillset}}</h3>
             </ul>
             <div>
                 <a class='item-control item-create' title='Create item' data-type='skill' data-skillset="{{key}}">
@@ -21,4 +19,3 @@
         </div>
     {{/each}}
 </section>
-{{stringify system}}
