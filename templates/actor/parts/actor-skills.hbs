@@ -7,15 +7,30 @@
                 <span>{{skillset.eureka.max}}</span>
             </div>
             {{#if skillset.skills}}
-                <ul>
+                <ol class='items-list'>
                     {{#each skillset.skills as |skill|}}
-                        <li>
-                            <span>{{skill.name}}</span>
-                            <span>{{skill.system.baseValue}}</span>
-                            <span>{{skill.system.value}}</span>
+                        <li class='item flexrow' data-item-id='{{skill._id}}'>
+                            <div class='item-name'>
+                                <h4>{{skill.name}}</h4>
+                            </div>
+                            <a class='rollable' data-roll-type='skill'>
+                                <h4>{{skill.system.baseValue}}</h4>
+                            </a>
+                            <a class='rollable' data-roll-type='skill'>
+                                <h4>{{skill.system.value}}</h4>
+                            </a>
+                            <div class='item-controls'>
+                                <a class='item-control item-edit' title='{{localize "DOCUMENT.Edit" type='skill'}}'>
+                                    <i class='fas fa-edit'></i>
+                                </a>
+                                <a class='item-control item-delete'
+                                   title='{{localize "DOCUMENT.Delete" type='skill'}}'>
+                                    <i class='fas fa-trash'></i>
+                                </a>
+                            </div>
                         </li>
                     {{/each}}
-                </ul>
+                </ol>
             {{/if}}
 
             <div>
