@@ -120,7 +120,7 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
                 console.log(i)
                 console.log("skillSets")
                 console.log(skillSets)
-                skillSets[i.system.skillSet].skills.push(i);
+                skillSets[i.system.skillset].skills.push(i);
             }
         }
 
