@@ -83,12 +83,12 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
         for (let [key, skillSet] of Object.entries(skills)) {
             skillSet.value = 0;
             for (const skill of skillSet.skills) {
-                skillSet.value += skill.baseValue
+                skillSet.value += skill.system.baseValue
             }
             skillSet.value = skillSet.value / 10;
             skillSet.eureka.max = skillSet.value / 10
             for (const skill of skillSet.skills) {
-                skill.value += skillSet.value;
+                skill.system.value += skillSet.value;
             }
         }
     }
@@ -194,7 +194,6 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
         const type = header.dataset.type;
         // Grab any data associated with this control.
         const data = duplicate(header.dataset);
-        data.skillSet = data.skillset;
         // Initialize a default name.
         const name = `New ${type.capitalize()}`;
         // Prepare the item object.

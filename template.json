@@ -73,7 +73,7 @@
       "templates": [
         "base"
       ],
-      "skillSet": "",
+      "skillset": "",
       "baseValue": 0,
       "formula": "d100"
     }
