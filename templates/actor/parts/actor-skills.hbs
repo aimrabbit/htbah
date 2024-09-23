@@ -9,10 +9,11 @@
             <h3>{{stringify this}}</h3>
             <h2>{{stringify this.skills}}</h2>
             Start here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-            {{#each this.skills as skill}}
-            <h4>{{skill}}</h4>
-            {{/each}}
-
+            {{#if skillset.skills}}
+                {{#each skillset.skills as |skill|}}
+                    <h4>{{skill}}</h4>
+                {{/each}}
+            {{/if}}
             <div>
                 <a class='item-control item-create' title='Create item' data-type='skill' data-skillset="{{key}}">
                     <i class='fas fa-plus'></i>
