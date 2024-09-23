@@ -2,9 +2,9 @@
     {{#each skillSets as |skillset key|}}
         <div>
             <h3>{{capitalize key}}</h3>
-            <div>
+            <div class="grid grid-2col">
                 <span>
-                    <h4>Skill Set Value</h4>
+                    <div>Skill Set Value</div>
                     <a class='rollable' data-roll-type='skill'>
                         {{skillset.value}}
                     </a>
