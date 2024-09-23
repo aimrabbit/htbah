@@ -106,6 +106,8 @@ export class HowToBeAHeroActorSheet extends ActorSheet {
             "knowledge": {"value": 0, "eureka": {"max": 0}, "skills": []},
             "social": {"value": 0, "eureka": {"max": 0}, "skills": []}
         };
+        console.log("_prepareItems context")
+        console.log(context)
 
         // Iterate through items, allocating to containers
         for (let i of context.items) {
