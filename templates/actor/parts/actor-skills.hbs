@@ -10,7 +10,7 @@
                     </a>
                 </span>
                 <span>
-                    <div>Eureka cur/max</div>
+                    <div>Eureka</div>
                 <span>{{skillset.eureka.max}}</span>
                 </span>
 
@@ -24,10 +24,10 @@
                                 <h4>{{skill.name}}</h4>
                             </div>
                             <a class='rollable' data-roll-type='skill'>
-                                <h4>{{skill.system.basevalue}}</h4>
+                                <div>{{skill.system.basevalue}}</div>
                             </a>
                             <a class='rollable' data-roll-type='skill'>
-                                <h4>{{skill.system.value}}</h4>
+                                <div>{{skill.system.value}}</div>
                             </a>
                             <div class='item-controls'>
                                 <a class='item-control item-edit' title='{{localize "DOCUMENT.Edit" type='skill'}}'>
@@ -44,7 +44,8 @@
             {{/if}}
 
             <div>
-                <a class='item-control item-create' title='Create item' data-type='skill' data-skillset="{{key}}" data-basevalue="10">
+                <a class='item-control item-create' title='Create item' data-type='skill' data-skillset="{{key}}"
+                   data-basevalue="10">
                     <i class='fas fa-plus'></i>
                     {{localize 'DOCUMENT.New' type='skill'}}
                 </a>
