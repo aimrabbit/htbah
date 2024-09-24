@@ -19,8 +19,8 @@
             {{#if skillset.skills}}
                 <ol class='items-list'>
                     {{#each skillset.skills as |skill|}}
-                        <li class='item grid grid-4col' data-item-id='{{skill._id}}'>
-                            <div class='item-name'>
+                        <li class='item grid grid-12col' data-item-id='{{skill._id}}'>
+                            <div class='item-name grid-span-7'>
                                 <h4>{{skill.name}}</h4>
                             </div>
                             <a class='rollable' data-roll-type='skill'>
@@ -29,7 +29,7 @@
                             <a class='rollable' data-roll-type='skill'>
                                 <div>{{skill.system.value}}</div>
                             </a>
-                            <div class='item-controls'>
+                            <div class='item-controls grid-span-3'>
                                 <a class='item-control item-edit' title='{{localize "DOCUMENT.Edit" type='skill'}}'>
                                     <i class='fas fa-edit'></i>
                                 </a>
