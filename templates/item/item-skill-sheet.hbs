@@ -17,15 +17,10 @@
     {{!-- Description Tab --}}
     <div class="tab" data-group="primary" data-tab="description">
       {{!-- Editors must receive enriched text data from getData to properly handle rolls --}}
-        <h1 class="charname"><input name="basevalue" type="number" min="1" max="100" value="{{item.system.basevalue}}" placeholder="Base Value"/></h1>
+        <input name="basevalue" type="text" min="1" max="100" value="{{item.system.basevalue}}" placeholder="Base Value"/>
       {{editor enrichedDescription target="system.description" engine="prosemirror" button=true editable=editable}}
     </div>
       {{stringify item}}
-
-    {{!-- Effects Tab --}}
-    <div class="tab effects" data-group="primary" data-tab="effects">
-      {{> "systems/how-to-be-a-hero/templates/item/parts/item-effects.hbs"}}
-    </div>
   </section>
 
 </form>
