@@ -20,7 +20,7 @@
         <h1 class="charname"><input name="basevalue" type="number" min="1" max="100" value="{{item.basevalue}}" placeholder="Base Value"/></h1>
       {{editor enrichedDescription target="system.description" engine="prosemirror" button=true editable=editable}}
     </div>
-
+      {{stringify item}}
 
     {{!-- Effects Tab --}}
     <div class="tab effects" data-group="primary" data-tab="effects">
