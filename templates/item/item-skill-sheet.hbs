@@ -18,7 +18,8 @@
         <div class="tab" data-group="primary" data-tab="description">
             {{!-- Editors must receive enriched text data from getData to properly handle rolls --}}
             <div class="header-fields">
-                <h1 class="charname"><input name="basevalue" type="text" min="1" max="100" value="{{item.system.basevalue}}" placeholder="Value"/>
+                <h1 class="charname">
+                    <input name="item.system.basevalue" type="text" value="{{item.system.basevalue}}" placeholder="Value" data-dtype="Number"/>
                 </h1>
             </div>
             {{editor enrichedDescription target="system.description" engine="prosemirror" button=true editable=editable}}
