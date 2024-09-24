@@ -1,26 +1,29 @@
 <form class="{{cssClass}}" autocomplete="off">
-  <header class="sheet-header">
-    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
-    <div class="header-fields">
-      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
-    </div>
-  </header>
+    <header class="sheet-header">
+        <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+        </div>
+    </header>
 
-  {{!-- Sheet Tab Navigation --}}
-  <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item" data-tab="description">Description</a>
-  </nav>
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="description">Description</a>
+    </nav>
 
-  {{!-- Sheet Body --}}
-  <section class="sheet-body">
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
 
-    {{!-- Description Tab --}}
-    <div class="tab" data-group="primary" data-tab="description">
-      {{!-- Editors must receive enriched text data from getData to properly handle rolls --}}
-        <input name="basevalue" type="text" min="1" max="100" value="{{item.system.basevalue}}" placeholder="Base Value"/>
-      {{editor enrichedDescription target="system.description" engine="prosemirror" button=true editable=editable}}
-    </div>
-      {{stringify item}}
-  </section>
+        {{!-- Description Tab --}}
+        <div class="tab" data-group="primary" data-tab="description">
+            {{!-- Editors must receive enriched text data from getData to properly handle rolls --}}
+            <div class="header-fields">
+                <h1 class="charname"><input name="basevalue" type="text" min="1" max="100" value="{{item.system.basevalue}}" placeholder="Value"/>
+                </h1>
+            </div>
+            {{editor enrichedDescription target="system.description" engine="prosemirror" button=true editable=editable}}
+        </div>
+        {{stringify item}}
+    </section>
 
 </form>
