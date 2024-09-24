@@ -79,6 +79,10 @@ Handlebars.registerHelper('log', function (obj) {
   return console.log(JSON.stringify(obj));
 });
 
+Handlebars.registerHelper('number', function (str) {
+  return Number(str);
+});
+
 /* -------------------------------------------- */
 /*  Ready Hook                                  */
 /* -------------------------------------------- */
