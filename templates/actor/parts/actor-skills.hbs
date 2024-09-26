@@ -5,7 +5,7 @@
             <div class="grid grid-2col">
                 <span>
                     <div>Value</div>
-                    <a class='rollable' data-roll-type='skill'>
+                    <a class='rollable' data-roll-type='skill' data-roll="d100-{{skillset.value}}">
                         {{skillset.value}}
                     </a>
                 </span>
@@ -23,7 +23,7 @@
                             <div class='item-name grid-span-7'>
                                 <h4>{{skill.name}}</h4>
                             </div>
-                            <a class='rollable grid-span-2' data-roll-type='skill'>
+                            <a class='rollable grid-span-2' data-roll-type='skill' data-roll="d100-{{skill.system.value}}">
                                 <div>{{skill.system.value}}</div>
                             </a>
                             <div class='item-controls grid-span-3'>
