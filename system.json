@@ -4,14 +4,16 @@
   "description": "The How to be a Hero system for FoundryVTT!",
   "authors": [
     {
-      "name": "roboter5123",
-      "discord": "roboter5123"
+      "name": "roboter5123"
+    },
+    {
+      "name": "aimrabbit"
     }
   ],
-  "url": "https://github.com/roboter5123/htbah",
+  "url": "https://github.com/aimrabbit/htbah",
   "license": "LICENSE.txt",
   "readme": "README.md",
-  "bugs": "https://github.com/roboter5123/htbah/issues/new",
+  "bugs": "https://github.com/aimrabbit/htbah/issues/new",
   "changelog": "CHANGELOG.md",
   "media": [
     {
@@ -20,10 +22,11 @@
       "thumbnail": "systems/how-to-be-a-hero/assets/anvil-impact.png"
     }
   ],
-  "version": "0.1.0-99999999999991",
+  "version": "0.1.1",
   "compatibility": {
-    "minimum": 11,
-    "verified": "11.315"
+    "minimum": "12",
+    "verified": "12",
+    "maximum": "12"
   },
   "esmodules": ["module/how-to-be-a-hero.mjs"],
   "styles": ["css/how-to-be-a-hero.css"],
@@ -37,9 +40,12 @@
   "packs": [],
   "packFolders": [],
   "socket": false,
-  "manifest": "https://raw.githubusercontent.com/roboter5123/htbah/main/system.json",
-  "download": "https://github.com/roboter5123/htbah/archive/main.zip",
+  "manifest": "https://raw.githubusercontent.com/aimrabbit/htbah/main/system.json",
+  "download": "https://github.com/aimrabbit/htbah/archive/main.zip",
   "background": "systems/how-to-be-a-hero/assets/anvil-impact.png",
-  "gridDistance": 1,
-  "gridUnits": "m"
+  "grid": {
+    "diagonals": 2,
+    "distance": 1,
+    "units": "m"
+  }
 }
